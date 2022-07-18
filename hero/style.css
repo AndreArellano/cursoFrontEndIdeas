@@ -1,0 +1,26 @@
+html,body{
+  margin: 0px; /** para quitar el margen de arriba **/
+  font-family: Roboto, Arial, Helvetica;
+}
+.hero-image{
+  height: 75vh;
+  background: url('imagen1.jpg'), rgb(200,20,20);
+  background-size: cover;  /**se adapta dependiendo si la imagen es alta o ancha**/
+  background-position: center;
+  padding: 2em; /**para quitar el espacio que agrego el h1**/
+  color:white;
+
+  display: flex; /*facilita el manipular el contenido(letras de h1)*/
+  /*justify-content: center;*/
+  align-items: flex-end; /*centrar verticalmente*/
+  padding:5%; /*agrega mas espacio a la palabra*/
+}
+.hero-image h1{
+  font-size: 72px;
+  margin:0px;
+  text-shadow: 0px 0px 4px #000; /*agrega sombra a las letras*/
+}
+.hero-image p{
+  font-size: 24px;
+  text-shadow: 0px 0px 2px #000; /*agrega sombra a las letras*/
+}

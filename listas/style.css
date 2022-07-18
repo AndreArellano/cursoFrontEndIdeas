@@ -1,0 +1,15 @@
+.custom-list li{
+  list-style-type: none; /*para colocar y remover las vinhetas por default*/
+  position: relative;
+}
+
+/*posicionamuento del pseudo elemento*/
+.custom-list li::before{
+  content: "";  /*para que estos pseudoelementos se muestren el content debe tener un valor */
+  position: absolute;
+  /*dibujar un circulo*/
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: red;
+}
